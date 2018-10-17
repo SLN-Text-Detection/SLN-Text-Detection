@@ -1,6 +1,6 @@
 # SLN-Text-Detection
 
-Scale-residual Learning Network for Text Detection in the wild 
+Scale-residual Learning Network for Text Detection in the wild. Coding is adding. 
 
 
 Introduction
