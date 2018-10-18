@@ -28,10 +28,10 @@ This is a source code of the paper "Scale-residual Learning Network for Text Det
 <br>
 
 ## Test
-    Run 
-    <br>
+<br>
+Run     
     python eval_SLN.py 
-    <\br>
+<br>
     a text file will be then written to the output path.
 
 ## Results:
