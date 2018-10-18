@@ -31,13 +31,8 @@ This is a source code of the paper "Scale-residual Learning Network for Text Det
 
 
 ## Test
-<br>
-Run 
-'''python
-    python eval_SLN.py //python
-'''    
-<br>
-    a text file will be then written to the output path.
+        Run
+        python eval_SLN.py 
 
 ## Results:
     In icdar 2015, F-score is 0.85 and FPS is 11.2. 
