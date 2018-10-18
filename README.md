@@ -30,10 +30,10 @@ This is a source code of the paper "Scale-residual Learning Network for Text Det
         python eval_SLN.py 
 
 ## Results:
-    In icdar 2015, F-score is 0.85 and FPS is 11.2. 
-    In coco-text, F-score is 0.4661 ans FPS is 16.9. 
-    In minetto's dataset, F-score is 0.81 ans FPS is 27.6.
-    In UCAS_STLData, F-score is 0.91 ans FPS is 54.3.
+    In icdar 2015, F-score is 0.85. 
+    In coco-text, F-score is 0.47. 
+    In minetto's dataset, F-score is 0.81.
+    In UCAS_STLData, F-score is 0.91.
     
     
 
