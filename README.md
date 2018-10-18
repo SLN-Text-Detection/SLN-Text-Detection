@@ -7,7 +7,7 @@
 
 <br>
 This is a source code of the paper "Scale-residual Learning Network for Text Detection in the wild".
-\<br>
+<br>
 
 ## Installation
     Any version of tensorflow version > 1.0 should be ok.
