@@ -32,8 +32,11 @@ This is a source code of the paper "Scale-residual Learning Network for Text Det
 ## Results:
 <br>
     In icdar 2015, F-score is 0.85. 
-    In coco-text, F-score is 0.47. 
+<br>
+    In coco-text, F-score is 0.47.
+<br>
     In minetto's dataset, F-score is 0.81.
+<br>
     In UCAS_STLData, F-score is 0.91.
     
     
