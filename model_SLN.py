@@ -139,9 +139,6 @@ def loss(y_true_cls, y_pred_cls,
     :param training_mask: mask used in training, to ignore some text annotated by ###
     :return:
     '''
-    # y_true_cls = y_true_cls[:,::resize_factor,::resize_factor,:]
-    # y_true_geo = y_true_geo[:,::resize_factor,::resize_factor,:]
-    # classification_loss = dice_coefficient(y_true_cls, y_pred_cls, training_mask, resize_factor)
     classification_loss = dice_coefficient(y_true_cls, y_pred_cls, training_mask)
     # scale classification loss to match the iou loss part
     classification_loss *= 0.01
