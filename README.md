@@ -23,15 +23,10 @@ This is a source code of the paper "Scale-residual Learning Network for Text Det
 <br>
 
 ## Train
-<br>
-   If you want to train the model, you should provide the dataset path, in the dataset path, a separate gt text file should be provided for each image.
-<br>   
-   Run 
-       python train_SLN.py
+        python train_SLN.py
 
 
 ## Test
-        Run  
         python eval_SLN.py 
 
 ## Results:
