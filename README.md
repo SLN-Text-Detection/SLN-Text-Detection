@@ -38,6 +38,8 @@ This is a source code of the paper "Scale-residual Learning Network for Text Det
     In minetto's dataset, F-score is 0.81.
 <br>
     In UCAS_STLData, F-score is 0.91.
+<br>
+    The icdar 2013 and msra-td500 are being trained, and the evaluation results will be open.
     
     
 
