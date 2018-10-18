@@ -19,7 +19,7 @@ This is a source code of the paper "Scale-residual Learning Network for Text Det
 ## Download
 
 <br>
-    The COCO-Text was used to train the SLN model for 10 epochs, and then training datasets including COCO-Text, ICDAR 2015, and UCAS-STLData were adopted to fine-tune the model until convergence. The SLN model evaluated on the minetto’s dataset used the model fine-tuned on ICDAR 2015. BaiduYun.
+    The COCO-Text was used to train the SLN model for 10 epochs, and then training datasets including COCO-Text, ICDAR 2015, and UCAS-STLData were adopted to fine-tune the model until convergence. The SLN model evaluated on the minetto’s dataset used the model fine-tuned on ICDAR 2015.
 <br>
 
 ## Train
@@ -30,6 +30,7 @@ This is a source code of the paper "Scale-residual Learning Network for Text Det
         python eval_SLN.py 
 
 ## Results:
+<br>
     In icdar 2015, F-score is 0.85. 
     In coco-text, F-score is 0.47. 
     In minetto's dataset, F-score is 0.81.
