@@ -12,6 +12,7 @@ This is a source code of the paper "Scale-residual Learning Network for Text Det
 ## Installation
 <br>
     tensorflow version > 1.0
+<br>
     python 2.7 or 3.5 
 <br>
 
