@@ -17,11 +17,16 @@ This is a source code of the paper "Scale-residual Learning Network for Text Det
 <br>
 
 ## Download
+
+<br>
     The COCO-Text was used to train the SLN model for 10 epochs, and then training datasets including COCO-Text, ICDAR 2015, and UCAS-STLData were adopted to fine-tune the model until convergence. The SLN model evaluated on the minetto’s dataset used the model fine-tuned on ICDAR 2015. BaiduYun.
-    
+<br>
+
 ## Train
-    If you want to train the model, you should provide the dataset path, in the dataset path, a separate gt text file should be provided for each image and run Train_SLN.py.
-    
+<br>
+   If you want to train the model, you should provide the dataset path, in the dataset path, a separate gt text file should be provided for each image and run Train_SLN.py.
+<br>
+
 ## Test
     Run 
     <br>
