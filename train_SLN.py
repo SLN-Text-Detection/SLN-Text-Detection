@@ -12,7 +12,7 @@ gpu_options = tf.GPUOptions(allow_growth=True)
 
 
 tf.app.flags.DEFINE_integer('input_size', 512, '')
-tf.app.flags.DEFINE_integer('batch_size_per_gpu', 4, '')
+tf.app.flags.DEFINE_integer('batch_size_per_gpu', 12, '')
 tf.app.flags.DEFINE_integer('num_readers', 4, '')
 tf.app.flags.DEFINE_float('learning_rate', 0.0001, '')
 tf.app.flags.DEFINE_integer('max_steps', 50000, '')
