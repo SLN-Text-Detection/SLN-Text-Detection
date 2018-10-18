@@ -18,7 +18,11 @@ This is a source code of the paper "Scale-residual Learning Network for Text Det
     If you want to train the model, you should provide the dataset path, in the dataset path, a separate gt text file should be provided for each image and run Train_SLN.py.
     
 ## Test
-    Run eval_SLN.py, a text file will be then written to the output path.
+    Run 
+    <br>
+    python eval_SLN.py 
+    <\br>
+    a text file will be then written to the output path.
 
 ## Results:
     In icdar 2015, F-score is 0.85 and FPS is 11.2. 
