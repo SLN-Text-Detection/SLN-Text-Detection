@@ -10,7 +10,10 @@ This is a source code of the paper "Scale-residual Learning Network for Text Det
 <br>
 
 ## Installation
-    Any version of tensorflow version > 1.0 should be ok.
+<br>
+    tensorflow version > 1.0
+    python 2.7 or 3.5 
+<br>
 
 ## Download
     The COCO-Text was used to train the SLN model for 10 epochs, and then training datasets including COCO-Text, ICDAR 2015, and UCAS-STLData were adopted to fine-tune the model until convergence. The SLN model evaluated on the minetto’s dataset used the model fine-tuned on ICDAR 2015. BaiduYun.
