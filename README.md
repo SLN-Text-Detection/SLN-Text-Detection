@@ -1,12 +1,13 @@
 # SLN-Text-Detection
 
-## Scale-residual Learning Network for Text Detection in the wild. Coding is adding. 
+## Scale-residual Learning Network for Text Detection in the wild.
 
 
 ## Introduction
 
+<br>
 This is a source code of the paper "Scale-residual Learning Network for Text Detection in the wild".
-
+\<br>
 
 ## Installation
     Any version of tensorflow version > 1.0 should be ok.
