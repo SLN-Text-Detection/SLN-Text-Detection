@@ -34,7 +34,7 @@ This is a source code of the paper "Scale-residual Learning Network for Text Det
 <br>
 Run 
 '''python
-    python eval_SLN.py
+    python eval_SLN.py //python
 '''    
 <br>
     a text file will be then written to the output path.
