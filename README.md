@@ -31,7 +31,7 @@ This is a source code of the paper "Scale-residual Learning Network for Text Det
 
 
 ## Test
-        Run
+        Run  
         python eval_SLN.py 
 
 ## Results:
