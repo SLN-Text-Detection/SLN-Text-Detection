@@ -1,0 +1,7 @@
+We establish a large-scale dataset for text detection in the wild. 
+Our dataset, LS-Text, contains 36,000 images, and 270,783 text instances in them are manually annotated by quadrilateral labels. 
+The LS-Text covers the challenges of point-and-shoot and incidental scene text objects. 
+It has a wide range of scale changes, multi-direction, dense text distribution, uneven illumination, blurring and occlusion.
+
+
+The LS-Text dataset will be downloaded soon.
