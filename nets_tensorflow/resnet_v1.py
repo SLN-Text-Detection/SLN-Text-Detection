@@ -63,7 +63,6 @@ from . import resnet_utils
 
 resnet_arg_scope = resnet_utils.resnet_arg_scope
 
-
 @slim.add_arg_scope
 def bottleneck(inputs, depth, depth_bottleneck, stride, rate=1,
                outputs_collections=None, scope=None):
