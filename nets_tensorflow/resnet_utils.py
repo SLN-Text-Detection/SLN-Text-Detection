@@ -34,14 +34,10 @@ unit of each block. The two implementations give identical results but our
 implementation is more memory efficient.
 """
 
-
-
-
 import collections
 import tensorflow as tf
 
 slim = tf.contrib.slim
-
 
 class Block(collections.namedtuple('Block', ['scope', 'unit_fn', 'args'])):
     """A named tuple describing a ResNet block.
