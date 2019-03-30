@@ -1,3 +1,1 @@
-BaiduYun:
-链接：https://pan.baidu.com/s/1Wcb8Wd6Nc9GH3Qfm4osMKg 
-提取码：4zkb
+The trained model will be downloaded soon.
