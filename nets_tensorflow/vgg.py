@@ -45,7 +45,6 @@ import tensorflow as tf
 
 slim = tf.contrib.slim
 
-
 def vgg_arg_scope(weight_decay=0.0005):
   """Defines the VGG arg scope.
 
