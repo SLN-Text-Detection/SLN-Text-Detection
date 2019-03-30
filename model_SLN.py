@@ -77,9 +77,9 @@ def model(images, weight_decay=1e-5, is_training=True):
 
             F_score, F_geometry = [], []
             F_score_g, F_geometry_g = [], []
-            # # multi scale
+            # Scale-residual learning by the scale-aware supervision 
             for scale in range(4):
-                # with tf.variable_scope('out_'+str(scale)):
+                # For the concatenation operator
                 m = slim.conv2d(h[scale], 32, 3)
                 # m = slim.conv2d(h[scale], num_outputs[3], 3)
                 score_map = slim.conv2d(m, 1, 1, activation_fn=tf.nn.sigmoid, normalizer_fn=None)
@@ -139,9 +139,6 @@ def loss(y_true_cls, y_pred_cls,
     :param training_mask: mask used in training, to ignore some text annotated by ###
     :return:
     '''
-    # y_true_cls = y_true_cls[:,::resize_factor,::resize_factor,:]
-    # y_true_geo = y_true_geo[:,::resize_factor,::resize_factor,:]
-    # classification_loss = dice_coefficient(y_true_cls, y_pred_cls, training_mask, resize_factor)
     classification_loss = dice_coefficient(y_true_cls, y_pred_cls, training_mask)
     # scale classification loss to match the iou loss part
     classification_loss *= 0.01
