@@ -125,7 +125,7 @@ def detect(score_map, geo_map, timer, scale = 4, score_map_thresh=0.8, box_thres
     if boxes.shape[0] == 0:
         return np.array([]), timer
 
-    # here we filter some low score boxes by the average score map, this is different from the orginal paper
+    # Filter some low score boxes by the average score map
     for i, box in enumerate(boxes):
         mask = np.zeros_like(score_map, dtype=np.uint8)
         cv2.fillPoly(mask, box[:8].reshape((-1, 4, 2)).astype(np.int32) // scale, 1)
@@ -147,7 +147,7 @@ def sort_poly(p):
 
 def polygon_area(poly):
     '''
-    compute area of a polygon (多边形)
+    compute area of a polygon
     :param poly:
     :return:
     '''
@@ -213,7 +213,7 @@ def main(argv=None):
                 score, geometry, score_g, geometry_g = sess.run([f_score, f_geometry, F_score_g, F_geometry_g], feed_dict={input_images: [im_resized]})
                 timer['net'] = time.time() - start
 
-                # multiple scale output
+                # Testing for each scale output
                 # boxes_list = []
                 #
                 # for scale in [3]: # [0,1,2,3]
@@ -227,7 +227,7 @@ def main(argv=None):
                 # # boxes = nms_locality.standard_nms(np.array(boxes_list).astype(np.float64), 0.2)  # Pure python
                 # # boxes = nms_locality.nms_locality(np.array(boxes_list).astype(np.float64), 0.2)  # Pure python
                 # boxes = lanms.merge_quadrangle_n9(np.array(boxes_list).astype(np.float64), 0.2)             # Python + C++
-
+                # Single output
                 boxes, timer = detect(score_map=score[3], geo_map=geometry[3], timer=timer)
                 print('{} : net {:.0f}ms, restore {:.0f}ms, nms {:.0f}ms'.format(
                     im_fn, timer['net']*1000, timer['restore']*1000, timer['nms']*1000))
