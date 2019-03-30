@@ -12,9 +12,7 @@ import scipy.optimize
 import matplotlib.pyplot as plt
 import matplotlib.patches as Patches
 from shapely.geometry import Polygon
-
 import tensorflow as tf
-
 from data_util import GeneratorEnqueuer
 
 
@@ -78,7 +76,7 @@ def load_annoataion(p):
 
 def polygon_area(poly):
     '''
-    compute area of a polygon (多边形)
+    compute area of a polygon
     :param poly:
     :return:
     '''
@@ -725,7 +723,7 @@ def generator(input_size=512, batch_size=32,
                 geo_maps.append(geo_map[::4, ::4, :].astype(np.float32))
                 training_masks.append(training_mask[::4, ::4, np.newaxis].astype(np.float32))
 
-                #
+                # Push batch
                 if len(images) == batch_size:
                     yield images, image_fns, score_maps, geo_maps, training_masks
                     images = []
