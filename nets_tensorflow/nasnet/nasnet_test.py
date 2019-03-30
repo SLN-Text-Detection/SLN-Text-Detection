@@ -23,7 +23,6 @@ from nets.nasnet import nasnet
 
 slim = tf.contrib.slim
 
-
 class NASNetTest(tf.test.TestCase):
 
   def testBuildLogitsCifarModel(self):
