@@ -6,6 +6,7 @@ import tensorflow as tf
 import numpy as np
 from tensorflow.contrib import slim
 
+
 tf.app.flags.DEFINE_integer('text_scale', 512, '')
 from nets_tensorflow import vgg
 from nets import resnet_v1
