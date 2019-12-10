@@ -15,7 +15,6 @@ from shapely.geometry import Polygon
 import tensorflow as tf
 from data_util import GeneratorEnqueuer
 
-
 tf.app.flags.DEFINE_string('training_data_path', 'IC15_several_samples',
                            'training dataset to use')
 
